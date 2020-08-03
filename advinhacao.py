@@ -2,6 +2,7 @@ import random
 def jogar():
     print("*********************************")
     print("Bem vindo ao jogo da Adivinhação!")
+    print("Tente adivinhar o número secreto!")
     print("*********************************")
 
     numero_secreto = random.randrange(1, 101)
@@ -19,16 +20,6 @@ def jogar():
         total_de_tentativas = 10
     else:
         total_de_tentativas = 5
-
-    # import abra uma biblioteca que não seja builtin, exemplo random
-    # or é ou de outra opção
-    # continue faz retornar ao for vinculado após imprimir a mensagem com a proxima interação
-    # break quebra o laço de if, else, elif, while, for
-    # While cria uma condição para a execução do código
-    # for cria uma condição para a execução do código in
-    # range diz qual a ordenação que aparecerá
-    # If = Primeira possibilidade, Elif = Outra possibilidade listada, Else = Qualquer outra
-    # .format para acessar os comandos contidos no {}
 
     for rodada in range(0, total_de_tentativas):
         print("Tentativa {} de {}".format(rodada, total_de_tentativas))
@@ -58,3 +49,13 @@ def jogar():
     print("Fim de jogo")
 if(__name__ == "__main__"):
     jogar()
+
+# import abra uma biblioteca que não seja builtin, exemplo random
+# or é ou de outra opção
+# continue faz retornar ao for vinculado após imprimir a mensagem com a proxima interação
+# break quebra o laço de if, else, elif, while, for
+# While cria uma condição para a execução do código
+# for cria uma condição para a execução do código in
+# range diz qual a ordenação que aparecerá
+# If = Primeira possibilidade, Elif = Outra possibilidade listada, Else = Qualquer outra
+# .format para acessar os comandos contidos no {}
